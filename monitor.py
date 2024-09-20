@@ -50,7 +50,13 @@ async def monitor_ltp(chat_id, context, smartApi, token_df, exch_seg, options_ex
 
                 previous_average = current_average
                 total.clear()
-            await asyncio.sleep(120)
+                if name == "SENSEX":
+                    await asyncio.sleep(30)
+                    continue
+            if name == "SENSEX":
+                await asyncio.sleep(60)
+            else:
+                await asyncio.sleep(120)
 
 def getLTP(smartApi, exch_seg,symbol,token,rounding_logic):
     try:
