@@ -4,8 +4,8 @@ This project is a real-time market volatility monitoring bot designed to track s
 # Features
 
 1) Monitors multiple stock indices concurrently.
-2) Calculates the average LTP over a 3-minute interval and compares it with the previous average.
-3) Sends a Telegram message if the percentage change in LTP is greater than or equal to -2% over a 4-minute window.
+2) Calculates the average LTP over a 3-5 minute interval and compares it with the previous average.
+3) Sends a Telegram message if the percentage change in LTP is greater than or equal to -2% over a 5-minute window.
 4) Handles dynamic index monitoring through /start and /stop commands.
 5) Supports multiple index configurations, including Nifty, BankNifty, Sensex, and more.
 
